@@ -1,9 +1,7 @@
 variable "desired_capacity" {
     default    = 3
 }
-variable "max_size" {
-    default    = 5
-}
+variable "max_size" {}
 
 variable "min_size" {
     default    = 1
@@ -13,6 +11,9 @@ variable "min_size" {
 variable "instance_type" {
     default    = "c5.large"
 }
+
+# variable "ami_images" {}
+# variable "ami_image_owners" {}
 variable "region" {
     default             = "us-east-1"
 }
@@ -25,17 +26,22 @@ variable "subnet2" {}
 variable "vpc_id" {}
 variable "on_demand_base_capacity" {}
 variable "on_demand_percentage_above_base_capacity" {}
-variable "blacklisted_country" {}
-variable "blacklisted_ip" {}
+variable "blacklisted_country1" {}
+variable "blacklisted_country2" {}
+variable "blacklisted_ip1" {}
+variable "blacklisted_ip2" {}
 variable "key_location" {}
 variable "key_name" {}
-variable "load_balancer_port" {}
-variable "load_balancer_protocol" {}
-variable "sec_group_ingress_from_port1" {}
-variable "sec_group_ingress_to_port1" {}
-variable "sec_group_ingress_from_port2" {}
-variable "sec_group_ingress_to_port2" {}
-variable "sec_group_ingress_from_port3" {}
-variable "sec_group_ingress_to_port3" {}
-variable "lb_target_group_port" {}
-variable "lb_target_group_protocol" {}
+variable "sec_group_ingress_from_port" {}
+variable "sec_group_ingress_to_port" {}
+variable "lb_port" {}
+variable "lb_protocol" {}
+variable "health_check_grace_period" {}
+variable "healthy_threshold" {}
+variable "unhealthy_threshold" {}
+variable "timeout" {}
+variable "interval" {}
+variable "image_id" {}
+variable "spot_price" {}
+variable "mixed_instance1" {}
+variable "mixed_instance2" {}

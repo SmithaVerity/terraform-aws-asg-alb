@@ -40,8 +40,13 @@ resource "aws_wafregional_geo_match_set" "geo_match_set" {
 
   geo_match_constraint {
     type  = "Country"
-    value = var.blacklisted_country
+    value = var.blacklisted_country1
   }
+  geo_match_constraint {
+    type  = "Country"
+    value = var.blacklisted_country2
+  }
+
 }
 
 resource "aws_wafregional_ipset" "ipset" {
@@ -49,7 +54,11 @@ resource "aws_wafregional_ipset" "ipset" {
 
   ip_set_descriptor {
     type  = "IPV4"
-    value = var.blacklisted_ip
+    value = var.blacklisted_ip1
+  }
+  ip_set_descriptor {
+    type  = "IPV4"
+    value = var.blacklisted_ip2
   }
 }
 
