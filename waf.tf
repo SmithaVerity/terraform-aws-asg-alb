@@ -54,11 +54,11 @@ resource "aws_wafregional_ipset" "ipset" {
 
   ip_set_descriptor {
     type  = "IPV4"
-    value = var.blacklisted_ip1
+    value = var.blacklisted_ip_set1
   }
   ip_set_descriptor {
     type  = "IPV4"
-    value = var.blacklisted_ip2
+    value = var.blacklisted_ip_set2
   }
 }
 
