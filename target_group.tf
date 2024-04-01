@@ -1,5 +1,5 @@
 resource "aws_lb_target_group" "project" {
-  name     = "project"
+  name     = "ctpscalabilitytesttg"
   port     = var.lb_port
   protocol = var.lb_protocol
   vpc_id   = var.vpc_id
