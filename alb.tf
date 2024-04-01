@@ -1,6 +1,6 @@
 
 resource "aws_lb" "project" {
-  name               = "project"
+  name = "ctpscalabilitytestalb"
   internal           = false
   load_balancer_type = "application"
   security_groups    = [aws_security_group.alb_sec_group.id]
