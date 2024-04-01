@@ -1,5 +1,5 @@
 resource "aws_security_group" "alb_sec_group" {
-  name        = "alb_sec_group"
+  name        = "ctpscalabilitytest_sec_group"
   description = "Allow TLS inbound traffic"
   vpc_id      = var.vpc_id
   tags        = var.tags
