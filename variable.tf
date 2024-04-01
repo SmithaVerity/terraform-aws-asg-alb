@@ -1,7 +1,7 @@
 variable "desired_capacity" {
     default    = 2
 }
-variable "max_size" {{
+variable "max_size" {
     default    = 5
 }
 
