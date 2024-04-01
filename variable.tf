@@ -28,6 +28,10 @@ variable "subnet2" {}
 variable "vpc_id" {}
 variable "on_demand_base_capacity" {}
 variable "on_demand_percentage_above_base_capacity" {}
+variable "blacklisted_country1" {}
+variable "blacklisted_country2" {}
+variable "blacklisted_ip_set1" {}
+variable "blacklisted_ip_set2" {}
 variable "key_location" {}
 variable "key_name" {}
 variable "sec_group_ingress_from_port" {}
@@ -40,4 +44,6 @@ variable "unhealthy_threshold" {}
 variable "timeout" {}
 variable "interval" {}
 variable "image_id" {}
-
+variable "spot_price" {}
+variable "mixed_instance1" {}
+variable "mixed_instance2" {}
