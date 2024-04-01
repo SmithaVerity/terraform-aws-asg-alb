@@ -1,23 +1,23 @@
 module "ASG-with-ALB" {
     source             = "../"
-    region             = "us-east-1"
-    vpc_id             = "vpc-0234cd7ed377fefe9"
-    subnet1            = "subnet-0125f46f438c78275"
-    subnet2            = "subnet-017bfd666a439d8aa"
+    region             = "ap-south-1"
+    vpc_id             = "vpc-08ef158911afd6de8"
+    subnet1            = "subnet-0b5038c7d39ec986c"
+    subnet2            = "subnet-02ef3020c2b43a59d"
     key_name           = "jump_box"
     key_location       = "~/.ssh/id_rsa.pub"
 
     # Launch template parameters
-    image_id           = "ami-0d5eff06f840b45e9"
-    instance_type      = "c5.large"
+    image_id           = "ami-0fae72f2a1f1b2486"
+    instance_type      = "t2.micro"
     
     # Autoscaling parameters
     desired_capacity   = 2
-    max_size           = 2
+    max_size           = 4
     min_size           = 2
-    health_check_grace_period = 300
-    mixed_instance1     = "c4.large" 
-    mixed_instance2     = "c3.large"
+    health_check_grace_period = 30
+    mixed_instance1     = "t2.micro" 
+    mixed_instance2     = "t2.micro"
     on_demand_base_capacity = 0
     on_demand_percentage_above_base_capacity = 25
     spot_price         = "0.03"
