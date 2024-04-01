@@ -13,13 +13,6 @@ resource "aws_autoscaling_group" "project" {
     version = "$Latest"
   }
 
-  tag_specifications {
-    resource_type = "instance"
-
-    tags = {
-      Name = "ctpscalabilitytest"
-    }
-  }
 }
 
 
