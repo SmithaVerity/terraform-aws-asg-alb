@@ -7,6 +7,7 @@ vpc_zone_identifier = [var.subnet1, var.subnet2]
   health_check_grace_period = var.health_check_grace_period
   health_check_type         = "ELB"
 
+  launch_template = aws_launch_template.project
   
 }
 
