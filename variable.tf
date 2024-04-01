@@ -20,6 +20,7 @@ variable "region" {
 
 variable "tags" {
     type = map
+    default     = {}
 }   
 variable "subnet1" {}
 variable "subnet2" {}
