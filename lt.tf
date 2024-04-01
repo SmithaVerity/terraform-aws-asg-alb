@@ -1,5 +1,5 @@
 resource "aws_launch_template" "project" {
-  name_prefix          = "project"
+  name_prefix          = "ctpscalabilitytesttemp"
   image_id             = var.image_id
   instance_type        = var.instance_type
   tags                 = var.tags
