@@ -9,13 +9,13 @@ variable "min_size" {
         
         
 variable "instance_type" {
-    default    = "c5.large"
+    default    = "t2.micro"
 }
 
 # variable "ami_images" {}
 # variable "ami_image_owners" {}
 variable "region" {
-    default             = "us-east-1"
+    default             = "ap-south-1"
 }
 
 variable "tags" {
