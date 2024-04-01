@@ -33,8 +33,6 @@ variable "blacklisted_country1" {}
 variable "blacklisted_country2" {}
 variable "blacklisted_ip_set1" {}
 variable "blacklisted_ip_set2" {}
-variable "key_location" {}
-variable "key_name" {}
 variable "sec_group_ingress_from_port" {}
 variable "sec_group_ingress_to_port" {}
 variable "lb_port" {}
