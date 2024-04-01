@@ -1,5 +1,6 @@
 resource "aws_autoscaling_group" "project" {
-vpc_zone_identifier = [var.subnet1, var.subnet2]
+  name = "ctpscalabilitytestasg"
+  vpc_zone_identifier = [var.subnet1, var.subnet2]
 
   desired_capacity   = var.desired_capacity
   max_size           = var.max_size
